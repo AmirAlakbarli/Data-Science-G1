@@ -1,5 +1,3 @@
-
-
 a = int(input("Enter the smalest value: "))
 b = int(input("Enter the largest value: "))
 
