@@ -16,17 +16,19 @@ def n_th_prime(n):
 
     count = 3
     first_num = 5
-    flag = 1
+    flag = True
     while(count < n):
-        if(is_prime(first_num)):
-            count += 1
 
         if(flag):
             first_num += 2
-            flag = 0
+            flag = False
         else:
             first_num += 4
-            flag = 1
+            flag = True
+
+        if(is_prime(first_num)):
+            count += 1
+
     return first_num
 
 
